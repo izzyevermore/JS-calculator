@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT CALCULATOR</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<body>
+    <script src="script.js"></script>
+    <div class="calculator">
+        <div class="title">JS calculator</div>
+        <div class="input" id="answer">
+            <input type="text" id="result">
+        </div>
+        <div class="keyboard">
+            <div class="operators">
+                <button id="symbol" value="+" onclick="disp('+')">+</button>
+                <button id="symbol" value="-" onclick="disp('-')">-</button>
+                <button id="symbol" value="*" onclick="disp('*')">*</button>
+                <button id="symbol" value="/" onclick="disp('/')">/</button>
+            </div>
+            <div class="leftside">
+                <div class="numbers">
+                    <table>
+                        <tr>
+                    <td><button value="7"onclick="disp('7')">7</button></td>
+                    <td><button value="8" onclick="disp('8')">8</button></td>
+                    <td><button value="9" onclick="disp('9')">9</button></td>
+                </tr>
+                <tr>
+                    <td><button value="4" onclick="disp('4')">4</button></td>
+                   <td> <button value="5" onclick="disp('5')">5</button></td>
+                    <td><button value="6" onclick="disp('6')">6</button></td>
+                    <td rowspan="2" colspan="2"><button id="equals" value = "=" onclick="calculate()">=</button></td>
+                </tr>
+                <tr>
+                    <td><button value="1" onclick="disp('1')">1</button></td>
+                    <td><button value="2" onclick="disp('2')">2</button></td>
+                    <td><button value="3" onclick="disp('3')">3</button></td>
+                </tr>
+                <tr>
+                    <td><button value="0" onclick="disp('0')">0</button></td>
+                    <td><button value="." onclick="disp('.')">.</button></td>
+                    <td><button id="clear" value="C" onclick="clr()">C</button></td>
+                </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
